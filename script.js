@@ -93,4 +93,3 @@ const playGame = (choice) => {
 };
 
 playGame('bomb');
-
