@@ -17,7 +17,7 @@ todos :
 
 */
 
-//function to get the user choice
+//Get the user’s choice
 const getUserChoice = userInput => {
   userInput = userInput.toLowerCase();
   if (userInput === "rock") {
@@ -31,7 +31,7 @@ const getUserChoice = userInput => {
   }
 };
 
-//function to get the computer choice
+//Get the computer’s choice
 const getComputerChoice = () => {
   const randomNumber = Math.floor(Math.random() * 3);
   switch (randomNumber) {
@@ -44,6 +44,7 @@ const getComputerChoice = () => {
   }
 };
 
+//Compare the two choices and determine a winner 
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
     return 'tie!';
@@ -71,3 +72,13 @@ const determineWinner = (userChoice, computerChoice) => {
   }
 };
 
+//Start the program and display the results
+const playGame = (choice) => {
+  let userChoice = getUserChoice(choice);
+  console.log(userChoice);
+  let computerChoice = getComputerChoice();
+  console.log(computerChoice);
+  console.log(determineWinner(userChoice, computerChoice));
+};
+
+// playGame('paper');
