@@ -26,6 +26,8 @@ const getUserChoice = userInput => {
     return userInput;
   } else if (userInput === "scissors") {
     return userInput;
+  } else if (userInput === "bomb") {
+    return userInput;
   } else {
     console.log("Error Message");
   }
@@ -70,6 +72,15 @@ const determineWinner = (userChoice, computerChoice) => {
       return 'Human win!';
     }
   }
+  if (userChoice === 'bomb') {
+    if (computerChoice === 'rock') {
+      return 'Human win!';
+    } else if (computerChoice === 'paper') {
+      return 'Human win!';
+    } else if (computerChoice === 'scissors') {
+      return 'Human win!';
+    }
+  }
 };
 
 //Start the program and display the results
@@ -81,4 +92,5 @@ const playGame = (choice) => {
   console.log(determineWinner(userChoice, computerChoice));
 };
 
-// playGame('paper');
+playGame('bomb');
+
