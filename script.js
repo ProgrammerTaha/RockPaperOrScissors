@@ -17,7 +17,7 @@ todos :
 
 */
 
-const getUserChoice = (userInput) => {
+const getUserChoice = userInput => {
   userInput = userInput.toLowerCase();
   if (userInput === "rock") {
     return userInput;
@@ -29,3 +29,5 @@ const getUserChoice = (userInput) => {
     console.log("Error Message");
   }
 };
+
+// console.log(getUserChoice('rock'));
