@@ -48,4 +48,26 @@ const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
     return 'tie!';
   }
+  if (userChoice === 'rock') {
+    if (computerChoice === 'paper') {
+      return 'Computer win!';
+    } else if (computerChoice === 'scissors') {
+      return 'Human win!';
+    }
+  }
+  if (userChoice === 'paper') {
+    if (computerChoice === 'rock') {
+      return 'Human win!';
+    } else if (computerChoice === 'scissors') {
+      return 'Computer win!';
+    }
+  }
+  if (userChoice === 'scissors') {
+    if (computerChoice === 'rock') {
+      return 'Computer win!';
+    } else if (computerChoice === 'paper') {
+      return 'Human win!';
+    }
+  }
 };
+
