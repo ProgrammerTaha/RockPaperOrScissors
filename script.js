@@ -19,7 +19,13 @@ todos :
 
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
-  if () {
-    
+  if (userInput === "rock") {
+    return userInput;
+  } else if (userInput === "paper") {
+    return userInput;
+  } else if (userInput === "scissors") {
+    return userInput;
+  } else {
+    console.log("Error Message");
   }
 };
