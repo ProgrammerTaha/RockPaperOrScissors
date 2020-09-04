@@ -9,9 +9,17 @@
 ! Paper covers rock
 ! If there’s a tie, then the game ends in a draw
 
-todo Get the user’s choice.
+todos :
+* Get the user’s choice.
 * Get the computer’s choice.
 * Compare the two choices and determine a winner
 * Start the program and display the results
 
 */
+
+const getUserChoice = (userInput) => {
+  userInput = userInput.toLowerCase();
+  if () {
+    
+  }
+};
